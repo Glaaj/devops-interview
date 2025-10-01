@@ -1,0 +1,10 @@
+---
+## Please ensure the requirements.yaml file is utilized:
+## run `ansible-galaxy collection install -r requirements.yaml` in the root of the repo.
+- name: Build and run Hello World Docker container
+  hosts: localhost
+  tasks:
+    - name: Build and run Hello World Docker container
+      become: true
+      ansible.builtin.import_role:
+        name: helloworld
