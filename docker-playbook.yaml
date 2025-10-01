@@ -1,0 +1,8 @@
+---
+- name: Setup ubuntu based host with docker
+  hosts: localhost
+  tasks:
+    - name: Setup ubuntu based host with docker
+      become: true
+      ansible.builtin.import_role:
+        name: docker_install
